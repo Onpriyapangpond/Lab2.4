@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>lab2.4</title>
+    
+    </head>
+    <body>
+        <form action="./form-echo.php" method="get">
+        USERNAME :
+        <input
+            type="text"
+            name="username"
+            placeholder="Username">
+        <p><label>สาขาวิชา:</label>       
+        <select name="dept">
+            <option value="">--Please choose an option-- </option>
+            <option value="CS">CS</option>
+            <option value="IC">IC</option>
+            <option value="MA">MA</option>
+            <option value="IMI">IMI</option>
+            <option value="AS">AS</option>
+            <option value="AFET">AFET</option>
+        </select></p></br>
+        <label for="name">ชื่อภาษาอังกฤษ:</label>
+        <input type="text" id="engname" name="engname" size="19" required pattern="[A-Z]+" >
+        </br>
+        <label>รหัสนักศึกษา:</label>
+        <input type="text" id="id" name="id" required size="16" pattern="\d{2}[\-]\d{6}[\-]\d{4}[\-]\d{1}">
+        </br>
+        <label>บ้านเลขที่:</label>
+        <input type="text" id="home" name="home" size="25" required pattern="[0-9]([0-9]|/)+">
+        </br>
+        <label>รหัสสินค้า:</label>
+        <input type="text" id="product" name="product" size="25" required pattern="[A-Z]{3}\d\d">
+        </br>
+        <label>ชื่อภาษาไทย:</label>
+        <input type="text" id="name" name="name" size="21" required pattern="[ก-๏\s]+$">
+        </br>
+    </br>
+        <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
